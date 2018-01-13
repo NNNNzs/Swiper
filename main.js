@@ -1,9 +1,9 @@
 window.onload = function(){
     const Swiper = document.getElementById("Swiper");//轮播图内容
-    const img = Swiper.firstElementChild;//轮播图
-    const imgWidth = img.offsetWidth;//图片的宽度
+    var img = Swiper.firstElementChild;//轮播图
+    var imgWidth = img.offsetWidth;//图片的宽度    
     var xScroll = function xScroll(){
-    setInterval(pre,1500);
+    setInterval(next,1500);
     }();
 
     function next() {
@@ -18,7 +18,7 @@ window.onload = function(){
         newLeft +=imgWidth;//新的左边距
         if(newLeft === -imgWidth)//是否是第一张图片
         {Swiper.style.left = -imgWidth*Swiper.children.length +"px";}//返回到最后一个
-        else{Swiper.style.left = newLeft + 'px';}//每次右移一个图片的宽度
+         // else{Swiper.style.left = newLeft + 'px';}//每次右移一个图片的宽度
     }           
 
 }
