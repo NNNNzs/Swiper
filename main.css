@@ -10,7 +10,7 @@
     height: 400px;
 }
 #Swiper{
-    transition:  left 1s ease;
+    transition:  left 1s;
     z-index: 1;
     position: absolute;
     width: 4000px;
@@ -19,4 +19,52 @@
 }
 #Swiper img{    
     float: left;
+}
+.container .buttons{
+    position: absolute;
+    z-index: 99;
+    height: 15px;
+    bottom: 20px;
+    left:340px;
+}
+.container .buttons span{
+    float:left;
+    list-style: none;
+    margin-left: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:rgba(43, 29, 29, 0.575)
+}
+.container .buttons .on{
+    background-color: red;
+}
+.arrow {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    width: 100px;
+    height: 400px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39px;
+    text-align: center;
+    color: #fff;
+    background-color: RGBA(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: RGBA(0, 0, 0, .7);
+}
+
+.container:hover .arrow {
+    display: block;
+}
+#prev {
+    left: 0px;
+}
+
+#next {
+    right: 0px;
 }
